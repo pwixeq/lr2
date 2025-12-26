@@ -29,10 +29,7 @@ class Character:
 
 
 class Hero(Character):
-    def heal(self):
-        heal_amount = int(self._health * 0.2)
-        self._health += heal_amount
-        print(f'{self.name} нашел зелье и восстановил {heal_amount} HP. HP: {self._health}')
+    pass
 
 class Enemy(Character):
     def __init__(self, name, health, damage):
@@ -158,4 +155,5 @@ while alive_party and boss.is_alive():
 if boss.is_alive():
     print("\nВекна победил. Все герои в изнанке.")
 else:
+
     print("\nПобеда! Дети сюжета.")
